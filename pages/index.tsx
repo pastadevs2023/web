@@ -12,7 +12,7 @@ import styles from '../styles/Home.module.css'
 import Web3Connectors from '../components/Web3Connectors'
 import { useActiveProvider } from '../connectors'
 import { useCallback, useRef, useState } from 'react'
-import { JSON_RPC_URL } from '../constants'
+import { JSON_RPC_URL, baconTokenCA } from '../constants'
 import Image from 'next/image'
 import { Theme } from '@uniswap/widgets'
 
@@ -59,14 +59,14 @@ const TOKEN_LIST = [
   },
   {
     name: 'BACON',
-    address: '0x993a1b91E8D7606cA8210fACcc64C053140F73F2',
+    address: baconTokenCA,
     symbol: 'BACON',
     decimals: 6,
     chainId: 1,
     logoURI: 'https://github.com/bacondevs/web/blob/master/assets/BACONDisk.png?raw=true',
   },
 ]
-const UNI = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
+const UNI = baconTokenCA
 
 const Home: NextPage = () => {
   // When a user clicks "Connect your wallet" in the SwapWidget, this callback focuses the connectors.
@@ -144,7 +144,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.footer}>
           <div className={styles.socials}>
-            <a>
+            <a href="https://etherscan.io/">
               <svg
                 stroke="currentColor"
                 fill="white"
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
                 <path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path>
               </svg>
             </a>
-            <a>
+            <a href="https://twitter.com/BACON_ERC">
               <svg
                 stroke="currentColor"
                 fill="white"
@@ -170,7 +170,7 @@ const Home: NextPage = () => {
                 <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
               </svg>
             </a>
-            <a>
+            <a href="https://telegram.me">
               <svg
                 stroke="currentColor"
                 fill="white"
@@ -185,7 +185,7 @@ const Home: NextPage = () => {
             </a>
           </div>
           <div className={styles.rights}>
-            <p>© 2023 BACON, All Rights Reserved</p>
+            <p style={{ fontSize: '10px' }}>© 2023 BACON, All Rights Reserved</p>
           </div>
         </div>
       </main>

@@ -25,6 +25,7 @@
 .hero {
   display: block;
   width: 40%;
+  z-index: 1;
 }
 
 .main {
@@ -79,7 +80,7 @@
   position: relative;
   justify-content: flex-start;
   padding-right: 10px;
-  font-size: 10px;
+  font-size: 5px;
 }
 
 .socials {
