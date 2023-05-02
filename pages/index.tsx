@@ -85,7 +85,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Uniswap Widgets</title>
+        <title>$BBACON</title>
         <meta name="description" content="Uniswap Widgets" />
         <link rel="icon" href="https://app.uniswap.org/favicon.png" />
       </Head>
