@@ -6,7 +6,7 @@ import BaconFloating from '../components/bacon'
 // ↓↓↓ Don't forget to import the widgets' fonts! ↓↓↓
 import '@uniswap/widgets/fonts.css'
 // ↑↑↑
-import baconBanner from '../assets/baconBanner.png'
+import BaconDisk from '../assets/BACONDisk.png'
 import styles from '../styles/Home.module.css'
 // import DocumentationCards from '../components/DocumentationCards'
 import Web3Connectors from '../components/Web3Connectors'
@@ -14,8 +14,59 @@ import { useActiveProvider } from '../connectors'
 import { useCallback, useRef, useState } from 'react'
 import { JSON_RPC_URL } from '../constants'
 import Image from 'next/image'
-const TOKEN_LIST = 'https://gateway.ipfs.io/ipns/tokens.uniswap.org'
-const UNI = '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984'
+import { Theme } from '@uniswap/widgets'
+
+const theme: Theme = {
+  secondary: '#fbae13',
+  primary: '#ffffff',
+  interactive: '#702700',
+  container: '#c2280d',
+  module: '#e85900',
+  accent: '#8E8B78',
+  outline: '#930000',
+  dialog: '#FFF',
+  fontFamily: 'Minecraft',
+  borderRadius: 0.8,
+}
+
+const TOKEN_LIST = [
+  {
+    name: 'Dai Stablecoin',
+    address: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+    symbol: 'DAI',
+    decimals: 18,
+    chainId: 1,
+    logoURI:
+      'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png',
+  },
+  {
+    name: 'Tether USD',
+    address: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+    symbol: 'USDT',
+    decimals: 6,
+    chainId: 1,
+    logoURI:
+      'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xdAC17F958D2ee523a2206206994597C13D831ec7/logo.png',
+  },
+  {
+    name: 'USD Coin',
+    address: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+    symbol: 'USDC',
+    decimals: 6,
+    chainId: 1,
+    logoURI:
+      'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
+  },
+  {
+    name: 'BACON',
+    address: '0x993a1b91E8D7606cA8210fACcc64C053140F73F2',
+    symbol: 'BACON',
+    decimals: 6,
+    chainId: 1,
+    logoURI: 'https://github.com/bacondevs/web/blob/master/assets/BACONDisk.png?raw=true',
+  },
+]
+const UNI = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48'
 
 const Home: NextPage = () => {
   // When a user clicks "Connect your wallet" in the SwapWidget, this callback focuses the connectors.
@@ -41,14 +92,20 @@ const Home: NextPage = () => {
       <BaconFloating count={10} />
       <main className={styles.content_container}>
         <div className={styles.hero}>
-          <Image src={'/baconBanner.png'} width={500} height={200} layout="responsive" objectFit="contain" />
+          <Image
+            src={'/baconBanner.png'}
+            width={500}
+            height={200}
+            layout="responsive"
+            objectFit="contain"
+            alt="bacon"
+          />
           <h1> Welcome to BACON</h1>
           <p>
-            Welcome to the home of $BACON, the world's first and only memecoin dedicated to the love of bacon and the
-            power of crypto! We believe that bacon and crypto are two of the greatest things in the world, and our
-            mission is to combine them to create something truly special. With $BACON, you can take a bite out of the
-            crypto bacon revolution and join a community of like-minded bacon and crypto enthusiasts. Whether you're a
-            seasoned crypto trader or a bacon lover looking to try something new, $BACON has something for everyone.
+            Join the $BACON family and take a bite out of the crypto revolution, commemorating that iconic 2012 moment
+            when bacon met Bitcoin. Whether you&apos;re a seasoned crypto trader seeking the next big thing or a bacon
+            aficionado ready to bring home the digital bacon, $BACON is your token. Join us as we sizzle up the crypto
+            universe, one $BACON at a time.
           </p>
         </div>
         <div className={styles.main}>
@@ -80,6 +137,7 @@ const Home: NextPage = () => {
                 defaultInputTokenAddress="NATIVE"
                 defaultInputAmount="1"
                 defaultOutputTokenAddress={UNI}
+                theme={theme}
               />
             </div>
           </div>
@@ -90,7 +148,7 @@ const Home: NextPage = () => {
               <svg
                 stroke="currentColor"
                 fill="white"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 320 512"
                 height="1em"
                 width="1em"
@@ -103,7 +161,7 @@ const Home: NextPage = () => {
               <svg
                 stroke="currentColor"
                 fill="white"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 512 512"
                 height="1em"
                 width="1em"
@@ -116,7 +174,7 @@ const Home: NextPage = () => {
               <svg
                 stroke="currentColor"
                 fill="white"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 496 512"
                 height="1em"
                 width="1em"
