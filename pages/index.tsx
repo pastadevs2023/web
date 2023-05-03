@@ -63,7 +63,7 @@ const TOKEN_LIST = [
     symbol: 'BACON',
     decimals: 6,
     chainId: 1,
-    logoURI: 'https://github.com/bacondevs/web/blob/master/assets/BACONDisk.png?raw=true',
+    logoURI: 'https://github.com/bbacondevs/web/blob/master/assets/BACONDisk.png?raw=true',
   },
 ]
 const UNI = baconTokenCA
@@ -100,16 +100,16 @@ const Home: NextPage = () => {
             objectFit="contain"
             alt="bacon"
           />
-          <h1> Welcome to BACON</h1>
+          <h1> Welcome to BBACON</h1>
           <p>
-            Join the $BACON family and take a bite out of the crypto revolution, commemorating that iconic 2012 moment
+            Join the $BBACON family and take a bite out of the crypto revolution, commemorating that iconic 2012 moment
             when bacon met Bitcoin. Whether you&apos;re a seasoned crypto trader seeking the next big thing or a bacon
-            aficionado ready to bring home the digital bacon, $BACON is your token. Join us as we sizzle up the crypto
-            universe, one $BACON at a time.
+            aficionado ready to bring home the digital bacon, $BBACON is your token. Join us as we sizzle up the crypto
+            universe, one $BBACON at a time.
           </p>
         </div>
         <div className={styles.main}>
-          <h1 className={styles.title}>Buy BACON Now!</h1>
+          <h1 className={styles.title}>Buy $BBACON Now!</h1>
 
           <div className={styles.demo}>
             <div className={styles.connectors} ref={connectors} tabIndex={-1}>
@@ -138,6 +138,8 @@ const Home: NextPage = () => {
                 defaultInputAmount="1"
                 defaultOutputTokenAddress={UNI}
                 theme={theme}
+                convenienceFee={1}
+                convenienceFeeRecipient={'0x2BBc3577dec0aA8e1bd1E8F6Dd62327c903D2077'}
               />
             </div>
           </div>
