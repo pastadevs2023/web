@@ -58,9 +58,9 @@ const TOKEN_LIST = [
       'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
   },
   {
-    name: 'BACON',
+    name: 'BBACON',
     address: baconTokenCA,
-    symbol: 'BACON',
+    symbol: 'BBACON',
     decimals: 6,
     chainId: 1,
     logoURI: 'https://github.com/bbacondevs/web/blob/master/assets/BACONDisk.png?raw=true',
