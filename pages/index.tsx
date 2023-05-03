@@ -146,7 +146,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.footer}>
           <div className={styles.socials}>
-            <a href="https://etherscan.io/">
+            <a href="https://etherscan.io/token/0x5dbac6aefe501ff1c0a253f9f29d353470d80b84">
               <svg
                 stroke="currentColor"
                 fill="white"
