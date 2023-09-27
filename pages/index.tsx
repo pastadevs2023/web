@@ -145,12 +145,13 @@ const Home: NextPage = () => {
             understand this stuff; they have the intellectual capacity to truly appreciate the depths of this coin, to
             realise that it is not just speculation - it says something deep about LIFE. As a consequence people who
             dislike Bitcoin truly ARE idiots- of course they wouldn&apos;t appreciate, for instance, the brilliance in
-            Satoshi&apos;s brilliant programming method - the “Blockchain,” which itself is a cryptic reference to Haber
-            and Stornetta&apos;s Merkle trees. I&apos;m smirking right now just imagining one of those addlepated
-            simpletons scratching their heads in confusion as our lord and savior&apos;s genius wit unfolds itself on
-            their computer screens. What fools.. how I pity them. 😂 And yes, by the way, i DO have a Bitcoin tattoo.
-            And no, you cannot see it. It&apos;s for the ladies&apos; eyes only- and even then they have to demonstrate
-            that they&apos;re within 5 IQ points of my own (preferably lower) beforehand. Nothin personnel kid 😎
+            Satoshi&apos;s brilliant programming method - the &quot;Blockchain,&quot; which itself is a cryptic
+            reference to Haber and Stornetta&apos;s Merkle trees. I&apos;m smirking right now just imagining one of
+            those addlepated simpletons scratching their heads in confusion as our lord and savior&apos;s genius wit
+            unfolds itself on their computer screens. What fools.. how I pity them. 😂 And yes, by the way, i DO have a
+            Bitcoin tattoo. And no, you cannot see it. It&apos;s for the ladies&apos; eyes only- and even then they have
+            to demonstrate that they&apos;re within 5 IQ points of my own (preferably lower) beforehand. Nothin
+            personnel kid 😎
           </p>
           <div className={styles.demo}>
             <div className={styles.connectors} ref={connectors} tabIndex={-1}>
@@ -212,20 +213,21 @@ const Home: NextPage = () => {
           <p className={styles.introParagraph}>
             Well, believe me, it&apos;s crystal clear: NFT&apos;s are racist. You don&apos;t believe this, huh? Well,
             I&apos;m going to explain it to you. First off, the name. The The Bored Ape Yacht Club wants you to believe
-            that "NFT" stands for Non-fungible token. This name might be an accurate name for the images of apes that
-            are sold, but it also stands for "n****r(s) for trade". This is absolutely not okay. NFT&apos;s have been
-            fully covered on national news and they usual tell you that images of apes are being traded. What they
-            don&apos;t tell you, is that those apes usually have big lips, golden chains and rings and contains an awful
-            lot of stereotypes. NFT&apos;s use apes as a methaphor for the stereotypical black communty. This can be
-            explained: NFT&apos;s were invented on 4chan. 4chan is the breedplace of 99% of evil on the internet. The
-            /pol/ communty, already infamous for it&apos;s racism and anti-semitism. created NFT&apos;s because they
-            want to insult black people. Using complex trading methods on specific websites on the internet and needing
-            a fast connection to the world wide web they try to exclude as many black people (mainly the African
-            continent). It even goes beyond that. Neo-Nazi artists, like Ben Garisson and StoneToss have recently used
-            this way of trading to sell their art full of hate. They can do this because NFT&apos;s are completely
-            anonymous. Republicans and right-wingers say they screenshot NFT&apos;s. This is not an harmless joke, they
-            try to demonstrate how &apos;worthless&apos; NFT&apos;s (abbreviation for: N****r(s) for Trade) are. Stop
-            NFT&apos;s. Make a hashtag and cancel &apos;em. Cut off people that trade NFT&apos;s. Stop racism.
+            that &quot;NFT&quot; stands for Non-fungible token. This name might be an accurate name for the images of
+            apes that are sold, but it also stands for &quot;n****r(s) for trade&quot;. This is absolutely not okay.
+            NFT&apos;s have been fully covered on national news and they usual tell you that images of apes are being
+            traded. What they don&apos;t tell you, is that those apes usually have big lips, golden chains and rings and
+            contains an awful lot of stereotypes. NFT&apos;s use apes as a methaphor for the stereotypical black
+            communty. This can be explained: NFT&apos;s were invented on 4chan. 4chan is the breedplace of 99% of evil
+            on the internet. The /pol/ communty, already infamous for it&apos;s racism and anti-semitism. created
+            NFT&apos;s because they want to insult black people. Using complex trading methods on specific websites on
+            the internet and needing a fast connection to the world wide web they try to exclude as many black people
+            (mainly the African continent). It even goes beyond that. Neo-Nazi artists, like Ben Garisson and StoneToss
+            have recently used this way of trading to sell their art full of hate. They can do this because NFT&apos;s
+            are completely anonymous. Republicans and right-wingers say they screenshot NFT&apos;s. This is not an
+            harmless joke, they try to demonstrate how &apos;worthless&apos; NFT&apos;s (abbreviation for: N****r(s) for
+            Trade) are. Stop NFT&apos;s. Make a hashtag and cancel &apos;em. Cut off people that trade NFT&apos;s. Stop
+            racism.
           </p>
         </div>
         <div className={styles.footer}>
