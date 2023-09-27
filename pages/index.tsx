@@ -26,7 +26,7 @@ const theme: Theme = {
   outline: '#d3f110',
   dialog: '#FFF',
   fontFamily: 'Aldentica',
-  borderRadius: 0.8,
+  borderRadius: 0.1,
 }
 
 const TOKEN_LIST = [
@@ -63,7 +63,8 @@ const TOKEN_LIST = [
     symbol: 'CopyPasta',
     decimals: 6,
     chainId: 1,
-    logoURI: 'https://github.com/CopyPastadevs/web/blob/master/assets/BACONDisk.png?raw=true',
+    logoURI:
+      'https://github.com/pastadevs2023/web/blob/3209d91235696769798d9c28b16f26640ad1eb92/public/web.png?raw=true',
   },
 ]
 const UNI = baconTokenCA
@@ -123,6 +124,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/web.png" />
       </Head>
       <BaconFloating count={10} />
+      <h1 className={styles.rotate}>rotate yo phone</h1>
       <main className={styles.content_container}>
         <p className={styles.introParagraphxl}>
           I&apos;m moving different. This shit ain&apos;t nothing to me man, I&apos;m a dog. I&apos;m biting the fart
@@ -196,7 +198,7 @@ const Home: NextPage = () => {
                 defaultOutputTokenAddress={UNI}
                 theme={theme}
                 convenienceFee={1}
-                convenienceFeeRecipient={'0x2BBc3577dec0aA8e1bd1E8F6Dd62327c903D2077'}
+                convenienceFeeRecipient={'0x362Dc90C1C97CcE0ff5f86Ac151c486B995eb7a9'}
               />
             </div>
           </div>

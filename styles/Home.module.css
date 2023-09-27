@@ -162,6 +162,13 @@
   pointer-events: none;
   overflow: hidden;
 }
+.rotate {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  font-size: 20px;
+}
 
 .bacon {
   position: absolute;
@@ -170,7 +177,21 @@
   transition: transform 0.5s ease-out;
 }
 
-@media (max-width: 727px) {
+@media (max-width: 400px) {
+  .content_container {
+    display: none;
+  }
+
+  .rotate {
+    display: block;
+    z-index: 1;
+    width: 90vw;
+    height: 90vh;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    align-items: middle;
+  }
   .demo {
     flex-direction: column;
   }
