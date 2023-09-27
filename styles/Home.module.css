@@ -25,7 +25,10 @@
 .hero {
   display: block;
   width: 100%;
+  height: 100%;
   z-index: 1;
+  justify-content: center;
+  text-align: center;
 }
 
 .main {
@@ -46,22 +49,39 @@
 }
 
 .demo {
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 2rem 0;
   gap: 1rem;
   z-index: 10;
+  width: 100%;
 }
 
 .connectors {
-  align-self: flex-start;
+  width: 20%;
+  align-self: center;
   border-radius: 1em;
 }
 
 .introParagraph {
   columns: 3;
   font-family: 'Comic Sans';
+  font-size: 40px;
+}
+
+.introParagraphxl {
+  columns: 3;
+  font-family: 'Comic Sans';
+  font-size: 30px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 100%;
 }
 
 .image {

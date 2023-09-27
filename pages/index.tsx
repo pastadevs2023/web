@@ -91,68 +91,40 @@ const Home: NextPage = () => {
       </Head>
       <BaconFloating count={10} />
       <main className={styles.content_container}>
+        <p className={styles.introParagraphxl}>
+          I&apos;m moving different. This shit ain&apos;t nothing to me man, I&apos;m a dog. I&apos;m biting the fart
+          bubbles in the bath. We smokin symbiotes. Smoking that Whoopi Goldberg South Egyptian fur Burger Deluxe Mega
+          Millions scratcher skunk Bubba Kush. We smoking dung beetle. I&apos;m on 12 Vicodins smoking on Scooby-Doo
+          dick. We smoking Sequoia Banshee boogers. We snorting that good Buffalo Soldier Tamara and Jordanian gibbies.
+          They must have amnesia, they forgot that I&apos;m him. That Burberry Backwoods pack hitting that pussy smell
+          like a Hellcat V8. We smoking shit in a glass pipe blowing the Lord&apos;s bubbles. I&apos;m sick in the head.
+          I&apos;m on them Broward County Tic Tacs. I&apos;m on them Georgetown geronimos. I&apos;m on them Nashville
+          nibblers. I love my margielas in the Benz truck. I&apos;ll have to stunt on them next time. I don&apos;t give
+          a fuck if I go blind I don&apos;t need to see the price tag anyway. I&apos;m high on 12 Jason Bourne&apos;s
+          looking to beat the cum out of a thick fresh Oak. We&apos;re smoking filtered crack you stupid piece of shit.
+          I&apos;ll fuckin kill you. I&apos;m gonna call that pussy The Matrix cause I&apos;m in this bitch and I
+          can&apos;t get out. l Last guy who ran off on the pack got choked out by some Givenchy gloves. The last thing
+          he ever saw was the price tag on them. Slowly faded into darkness and I let the archangels take him. I need
+          more Sequoia Banshee boogers. Don&apos;t be shy girl I love me some pastrami mud flaps. I&apos;m moving like
+          French Montana - HUH?? Welcome to the Cream Kingdom bitch. Open up Blac Chyna. I drink her piss out of another
+          man&apos;s balls. My shooter a crackhead - he looked like Woody Harrelson. You ain&apos;t seen 10 bands in
+          your life bitch. Reach for my neck you&apos;ll get turned into an example. Y&apos;all gotta stop playing with
+          me. Man I threw diamonds at the strip clubs under the Great Pyramids. I pushed the camel through the eye of a
+          needle. This shit ain&apos;t nothing to me man. I Tied the UPS to the back of a trackhawk and dragged them
+          around the block for 24 hours. Motherfucker looked like a Resident Evil have campaign extra after we was done
+          with them. Ops wanted some initiative blew up their entire quadrant. I&apos;m moving like Oppenheimer. She
+          dropped that ass on me from an aggregarious angle. They thought I was Steven Wallace. Top shelf Zaza disrupted
+          my circadian rhythm. I have seen the Magna Carta. I&apos;ve seen the Eye of Horus. I was flipping bricks for
+          Manza Musa before y&apos;all even became a type 1 civilization. This shit ain&apos;t nothing to me you stupid
+          piece of shit. Step the wrong way and you will perish. That pussy feel like Biscoff butter. You think I care
+          about this shit? Ask me if I care about this shit, because I don&apos;t give a shit. If I had a dollar for
+          every time they said I gave a shit, I&apos;d be broke, cause I don&apos;t give a shit. My bitch look like
+          David Hasselhoff. I balled so hard they thought I was a fuckin nut sack. This shit ain&apos;t nothing to me
+          man. I&apos;ll kill you you stupid piece of shit
+        </p>
         <div className={styles.hero}>
           <Image src={'/logo.png'} width={500} height={200} layout="responsive" objectFit="contain" alt="bacon" />
           <h1> Welcome to CopyPasta</h1>
-          <p className={styles.introParagraph}>
-            I&apos;m moving different. This shit ain&apos;t nothing to me man, I&apos;m a dog. I&apos;m biting the fart
-            bubbles in the bath. We smokin symbiotes. Smoking that Whoopi Goldberg South Egyptian fur Burger Deluxe Mega
-            Millions scratcher skunk Bubba Kush. We smoking dung beetle. I&apos;m on 12 Vicodins smoking on Scooby-Doo
-            dick. We smoking Sequoia Banshee boogers. We snorting that good Buffalo Soldier Tamara and Jordanian
-            gibbies. They must have amnesia, they forgot that I&apos;m him. That Burberry Backwoods pack hitting that
-            pussy smell like a Hellcat V8. We smoking shit in a glass pipe blowing the Lord&apos;s bubbles. I&apos;m
-            sick in the head. I&apos;m on them Broward County Tic Tacs. I&apos;m on them Georgetown geronimos. I&apos;m
-            on them Nashville nibblers. I love my margielas in the Benz truck. I&apos;ll have to stunt on them next
-            time. I don&apos;t give a fuck if I go blind I don&apos;t need to see the price tag anyway. I&apos;m high on
-            12 Jason Bourne&apos;s looking to beat the cum out of a thick fresh Oak. We&apos;re smoking filtered crack
-            you stupid piece of shit. I&apos;ll fuckin kill you. I&apos;m gonna call that pussy The Matrix cause
-            I&apos;m in this bitch and I can&apos;t get out. l Last guy who ran off on the pack got choked out by some
-            Givenchy gloves. The last thing he ever saw was the price tag on them. Slowly faded into darkness and I let
-            the archangels take him. I need more Sequoia Banshee boogers. Don&apos;t be shy girl I love me some pastrami
-            mud flaps. I&apos;m moving like French Montana - HUH?? Welcome to the Cream Kingdom bitch. Open up Blac
-            Chyna. I drink her piss out of another man&apos;s balls. My shooter a crackhead - he looked like Woody
-            Harrelson. You ain&apos;t seen 10 bands in your life bitch. Reach for my neck you&apos;ll get turned into an
-            example. Y&apos;all gotta stop playing with me. Man I threw diamonds at the strip clubs under the Great
-            Pyramids. I pushed the camel through the eye of a needle. This shit ain&apos;t nothing to me man. I Tied the
-            UPS to the back of a trackhawk and dragged them around the block for 24 hours. Motherfucker looked like a
-            Resident Evil have campaign extra after we was done with them. Ops wanted some initiative blew up their
-            entire quadrant. I&apos;m moving like Oppenheimer. She dropped that ass on me from an aggregarious angle.
-            They thought I was Steven Wallace. Top shelf Zaza disrupted my circadian rhythm. I have seen the Magna
-            Carta. I&apos;ve seen the Eye of Horus. I was flipping bricks for Manza Musa before y&apos;all even became a
-            type 1 civilization. This shit ain&apos;t nothing to me you stupid piece of shit. Step the wrong way and you
-            will perish. That pussy feel like Biscoff butter. You think I care about this shit? Ask me if I care about
-            this shit, because I don&apos;t give a shit. If I had a dollar for every time they said I gave a shit,
-            I&apos;d be broke, cause I don&apos;t give a shit. My bitch look like David Hasselhoff. I balled so hard
-            they thought I was a fuckin nut sack. This shit ain&apos;t nothing to me man. I&apos;ll kill you you stupid
-            piece of shit
-          </p>
-        </div>
-        <div className={styles.main}>
-          <h1 className={styles.title}>HOW TO BUY</h1>
-          <div className={styles.image}>
-            <Image
-              src="/memes/howtobuy.jpg"
-              width={300}
-              height={279}
-              alt="if you dont know how you shouldnt buy this"
-            />
-          </div>
-          <p className={styles.introParagraph}>
-            To be fair, you have to have a very high IQ to understand Bitcoin. Its future applications are extremely
-            subtle, and without a solid grasp of computing and economics most of its possible functions will go over a
-            typical investor&apos;s head. There&apos;s also Sitoshis&apos;s free market outlook, which is deftly woven
-            into his creation- his personal philosophy draws heavily from Robert Malthus, for instance. The shills
-            understand this stuff; they have the intellectual capacity to truly appreciate the depths of this coin, to
-            realise that it is not just speculation - it says something deep about LIFE. As a consequence people who
-            dislike Bitcoin truly ARE idiots- of course they wouldn&apos;t appreciate, for instance, the brilliance in
-            Satoshi&apos;s brilliant programming method - the &quot;Blockchain,&quot; which itself is a cryptic
-            reference to Haber and Stornetta&apos;s Merkle trees. I&apos;m smirking right now just imagining one of
-            those addlepated simpletons scratching their heads in confusion as our lord and savior&apos;s genius wit
-            unfolds itself on their computer screens. What fools.. how I pity them. 😂 And yes, by the way, i DO have a
-            Bitcoin tattoo. And no, you cannot see it. It&apos;s for the ladies&apos; eyes only- and even then they have
-            to demonstrate that they&apos;re within 5 IQ points of my own (preferably lower) beforehand. Nothin
-            personnel kid 😎
-          </p>
           <div className={styles.demo}>
             <div className={styles.connectors} ref={connectors} tabIndex={-1}>
               <Web3Connectors />
@@ -185,6 +157,33 @@ const Home: NextPage = () => {
               />
             </div>
           </div>
+        </div>
+        <div className={styles.main}>
+          <h1 className={styles.title}>HOW TO BUY</h1>
+          <div className={styles.image}>
+            <Image
+              src="/memes/howtobuy.jpg"
+              width={300}
+              height={279}
+              alt="if you dont know how you shouldnt buy this"
+            />
+          </div>
+          <p className={styles.introParagraph}>
+            To be fair, you have to have a very high IQ to understand Bitcoin. Its future applications are extremely
+            subtle, and without a solid grasp of computing and economics most of its possible functions will go over a
+            typical investor&apos;s head. There&apos;s also Sitoshis&apos;s free market outlook, which is deftly woven
+            into his creation- his personal philosophy draws heavily from Robert Malthus, for instance. The shills
+            understand this stuff; they have the intellectual capacity to truly appreciate the depths of this coin, to
+            realise that it is not just speculation - it says something deep about LIFE. As a consequence people who
+            dislike Bitcoin truly ARE idiots- of course they wouldn&apos;t appreciate, for instance, the brilliance in
+            Satoshi&apos;s brilliant programming method - the &quot;Blockchain,&quot; which itself is a cryptic
+            reference to Haber and Stornetta&apos;s Merkle trees. I&apos;m smirking right now just imagining one of
+            those addlepated simpletons scratching their heads in confusion as our lord and savior&apos;s genius wit
+            unfolds itself on their computer screens. What fools.. how I pity them. 😂 And yes, by the way, i DO have a
+            Bitcoin tattoo. And no, you cannot see it. It&apos;s for the ladies&apos; eyes only- and even then they have
+            to demonstrate that they&apos;re within 5 IQ points of my own (preferably lower) beforehand. Nothin
+            personnel kid 😎
+          </p>
           <h1 className={styles.title}>OUR PLAN</h1>
           <div className={styles.image}>
             <Image
