@@ -23,12 +23,24 @@
 }
 
 .hero {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   width: 100%;
   height: 100%;
   z-index: 10;
   justify-content: center;
   text-align: center;
+}
+
+.circlecontainer {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  overflow: hidden; /* hide the overflowing parts of the image */
+  position: relative;
+  display: block;
+  align-self: center;
 }
 
 .main {

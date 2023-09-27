@@ -18,12 +18,12 @@ import { Theme } from '@uniswap/widgets'
 
 const theme: Theme = {
   secondary: '#fb13c5',
-  primary: '#ffffff',
+  primary: '#890000',
   interactive: '#0dc2aa',
-  container: '#4c0070',
+  container: '#faf600',
   module: '#00e827',
   accent: '#ff67ff',
-  outline: '#6e0093',
+  outline: '#d3f110',
   dialog: '#FFF',
   fontFamily: 'Aldentica',
   borderRadius: 0.8,
@@ -123,8 +123,18 @@ const Home: NextPage = () => {
           man. I&apos;ll kill you you stupid piece of shit
         </p>
         <div className={styles.hero}>
-          <Image src={'/logo.png'} width={500} height={200} layout="responsive" objectFit="contain" alt="bacon" />
+          <div className={styles.circlecontainer}>
+            <Image src={'/clogo.png'} width={1024} height={1024} layout="responsive" objectFit="cover" alt="logo" />
+          </div>
           <h1> Welcome to CopyPasta</h1>
+          <Image
+            src={'/memes/pastaeat.jpg'}
+            width={500}
+            height={200}
+            layout="responsive"
+            objectFit="contain"
+            alt="bacon"
+          />
           <div className={styles.demo}>
             <div className={styles.connectors} ref={connectors} tabIndex={-1}>
               <Web3Connectors />
@@ -184,15 +194,7 @@ const Home: NextPage = () => {
             to demonstrate that they&apos;re within 5 IQ points of my own (preferably lower) beforehand. Nothin
             personnel kid 😎
           </p>
-          <h1 className={styles.title}>OUR PLAN</h1>
-          <div className={styles.image}>
-            <Image
-              src="/memes/pastaeat.jpg"
-              width={300}
-              height={279}
-              alt="if you dont know how you shouldnt buy this"
-            />
-          </div>
+          <h1 className={styles.title}>HOW WERE FEELING</h1>
           <p className={styles.introParagraph}>
             I can&apos;t do this anymore. I invested my entire life savings, my entire FAmILY&apos;s LIFE SAVINGS into
             fucking bitcoin and it went to shit. YOU GUYS TOLD ME IT WAS THE RIGHT DECISION, HOW WAS I SUPPOSED TO KNOW
@@ -200,7 +202,7 @@ const Home: NextPage = () => {
             my wife what i did. she doesnt even like crypto. its over boys. i hope hell isnt as bad as they make it out
             to be
           </p>
-          <h1 className={styles.title}>OUR TEAM</h1>
+          <h1 className={styles.title}>WHAT WERE DOING</h1>
           <div className={styles.image}>
             <Image
               src="/memes/copypasta.jpg"
