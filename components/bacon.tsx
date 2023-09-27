@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react'
-import baconImg from '../assets/bacon.png' // Import your bacon image
+import butterfly from '../assets/mac.png' // Import your bacon image
+import mac from '../assets/butterfly.png'
+import penne from '../assets/penne.png'
 import styles from '../styles/BaconFloating.module.css'
 import Image from 'next/image'
 import { createPortal } from 'react-dom'
@@ -10,17 +12,18 @@ interface BaconFloatingProps {
 
 const BaconFloating: React.FC<BaconFloatingProps> = ({ count }) => {
   const containerRef = useRef<HTMLDivElement>(null)
-
   useEffect(() => {
     if (!containerRef.current) return
+    let images = [butterfly, mac, penne]
 
     const bacons: HTMLElement[] = []
     const container = containerRef.current
 
-    const createBacon = (x: number, y: number) => {
+    const createBacon = (x: number, y: number, rand_num: number) => {
       const bacon = document.createElement('img')
-      bacon.src = baconImg.src
-      bacon.alt = 'Bacon'
+      console.log(images)
+      bacon.src = images[rand_num].src
+      bacon.alt = 'pasta'
       bacon.width = 80
       bacon.height = 60
       bacon.className = styles.bacon
@@ -37,8 +40,8 @@ const BaconFloating: React.FC<BaconFloatingProps> = ({ count }) => {
       event.stopPropagation()
       const x = event.clientX
       const y = event.clientY
-
-      const bacon = createBacon(x, y)
+      let rand_num = Math.floor(Math.random() * 3)
+      const bacon = createBacon(x, y, rand_num)
       bacons.push(bacon)
     }
 
@@ -46,8 +49,8 @@ const BaconFloating: React.FC<BaconFloatingProps> = ({ count }) => {
       for (let i = 0; i < count; i++) {
         const x = Math.random() * window.innerWidth
         const y = Math.random() * window.innerHeight
-
-        const bacon = createBacon(x, y)
+        let rand_num = Math.floor(Math.random() * 3)
+        const bacon = createBacon(x, y, rand_num)
         bacons.push(bacon)
       }
     }
