@@ -92,7 +92,7 @@ const Home: NextPage = () => {
       <BaconFloating count={10} />
       <main className={styles.content_container}>
         <div className={styles.hero}>
-          <Image src={'/pasta.png'} width={500} height={200} layout="responsive" objectFit="contain" alt="bacon" />
+          <Image src={'/logo.png'} width={500} height={200} layout="responsive" objectFit="contain" alt="bacon" />
           <h1> Welcome to CopyPasta</h1>
           <p className={styles.introParagraph}>
             I&apos;m moving different. This shit ain&apos;t nothing to me man, I&apos;m a dog. I&apos;m biting the fart
