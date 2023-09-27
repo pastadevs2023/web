@@ -268,7 +268,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.footer}>
           <div className={styles.socials}>
-            <a href="https://etherscan.io/token/">
+            <a href="https://etherscan.io/token/0x1F1cfB301Ae53E8D10aAaC39aB76c4E177C559e2">
               <svg
                 stroke="currentColor"
                 fill="white"
@@ -309,7 +309,7 @@ const Home: NextPage = () => {
             </a>
           </div>
           <div className={styles.rights}>
-            <p style={{ fontSize: '10px' }}>0x000000000000000000000000000000000000dead</p>
+            <p style={{ fontSize: '10px' }}>0x1F1cfB301Ae53E8D10aAaC39aB76c4E177C559e2</p>
           </div>
         </div>
       </main>
